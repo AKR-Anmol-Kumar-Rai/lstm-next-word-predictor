@@ -24,36 +24,45 @@
 
 <p align="center">
 
-### 🌐 Try the Model
-
 <a href="https://lstm-next-word-predictor01.streamlit.app/">
   <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Streamlit-red?style=for-the-badge" />
 </a>
 
 </p>
 
-🔗 **Application:**  
+🌐 **Application:**  
 https://lstm-next-word-predictor01.streamlit.app/
 
 ---
 
 # 📌 Project Overview
 
-**LSTM Next Word Predictor** is a word-level Natural Language Processing project that uses a **Long Short-Term Memory (LSTM)** neural network to predict the most likely next word in a given sentence.
+**LSTM Next Word Predictor** is a word-level Natural Language Processing project that uses a **Long Short-Term Memory (LSTM)** neural network to predict the next word in a sequence.
 
-The application provides an interactive **Streamlit web interface** where users can enter a sentence and receive a predicted next word from the trained model.
+The project takes a sentence entered by the user, processes the text, converts the words into numerical token IDs, pads the sequence to the required length, and passes it through a trained LSTM model.
 
-Unlike simply creating a traditional machine learning classifier, this project implements a complete **sequence modeling pipeline**, starting from raw text preprocessing and vocabulary creation all the way to model training, model serialization, inference, and cloud deployment.
+The model then produces scores for the words in its vocabulary and selects the word with the highest score as the predicted next word.
+
+The complete project covers:
+
+- NLP preprocessing
+- Vocabulary creation
+- Word-to-index conversion
+- Sequence padding
+- Word embeddings
+- LSTM sequence modeling
+- Model training
+- Model saving and loading
+- Model inference
+- Streamlit application development
+- Docker containerization
+- Cloud deployment
 
 ---
 
-# 🎯 What Does This Project Do?
+# 🎯 What Does the Application Do?
 
-The application takes a sequence of words entered by the user and attempts to predict what word is most likely to come next based on the patterns learned during training.
+The application performs **next-word prediction**.
 
-### Example
+The user enters a sentence into the Streamlit interface.
 
-**User Input:**
-
-```text
-I am learning
