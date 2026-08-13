@@ -1,0 +1,3 @@
+streamlit
+nltk
+torch==2.8.0
