@@ -6,7 +6,7 @@ import pickle
 from functions.text_to_indices import text_to_indices
 from functions.tokens_generator import token_generator
 
-
+nltk.download("punkt_tab", quiet=True)
 
 
 
